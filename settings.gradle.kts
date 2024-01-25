@@ -23,3 +23,4 @@ rootProject.name = "BeersApp"
 include(":app")
 include(":data")
 include(":domain")
+include(":coreTest")
