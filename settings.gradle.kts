@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "BeersApp"
 include(":app")
- 
+include(":data")
