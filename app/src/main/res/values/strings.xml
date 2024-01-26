@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BeersApp</string>
+    <string name="error_general_message_try_again">Please try again</string>
 </resources>
