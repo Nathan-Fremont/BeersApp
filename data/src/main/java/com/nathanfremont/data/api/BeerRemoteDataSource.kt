@@ -26,7 +26,7 @@ class BeerRemoteDataSource @Inject constructor(
         .create(BeersService::class.java)
 
     fun getBeersMatchingFoodForPage(
-        matchingFood: String,
+        matchingFood: String?,
         page: Int,
         perPage: Int,
     ): Flow<List<BeerJsonEntity>> = callbackFlow {

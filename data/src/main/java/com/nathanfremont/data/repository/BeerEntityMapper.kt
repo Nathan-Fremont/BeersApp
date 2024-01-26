@@ -15,7 +15,6 @@ class BeerEntityMapper @Inject constructor() {
             name = name,
             description = description,
             imageUrl = imageUrl,
-            foodPairing = foodPairing,
         )
     }
 }

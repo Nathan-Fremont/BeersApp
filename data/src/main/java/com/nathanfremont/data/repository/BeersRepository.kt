@@ -10,7 +10,7 @@ class BeersRepository @Inject constructor(
     private val beerEntityMapper: BeerEntityMapper,
 ) {
     fun getBeersMatchingFoodForPage(
-        matchingFood: String,
+        matchingFood: String?,
         page: Int,
         perPage: Int,
     ) : Flow<List<BeerEntity>> = beerRemoteDataSource

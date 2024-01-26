@@ -8,10 +8,10 @@ interface BeersService {
     @GET("beers")
     suspend fun getBeersMatchingFoodForPage(
         @Query("food")
-        food: String,
-        @Query("food")
+        food: String?,
+        @Query("page")
         page: Int,
-        @Query("perPage")
+        @Query("per_page")
         perPage: Int = 25,
     ): Response<List<BeerJsonEntity>>
 }

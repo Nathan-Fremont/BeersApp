@@ -4,5 +4,4 @@ data class BeerEntity(
     val name: String,
     val description: String,
     val imageUrl: String,
-    val foodPairing: List<String>,
 )
