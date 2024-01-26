@@ -47,17 +47,15 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
     implementation(libs.hilt)
-    api(libs.timber)
+    implementation(libs.timber)
     kapt(libs.hiltCompiler)
     kapt(libs.hiltAndroidCompiler)
     implementation(project(":data"))
 
-    testImplementation(libs.junit)
     testImplementation(project(":coreTest"))
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    testImplementation(libs.bundles.commonTest)
+    testImplementation(libs.testingJunitJupiterApi)
+    kaptTest(libs.testingHilt)
+    testRuntimeOnly(libs.testingJunitJupiterEngine)
 }
